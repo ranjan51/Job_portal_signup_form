@@ -1,13 +1,120 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+button {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button:active,
+button:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  button {
+    font-size: 20px;
+    min-width: 196px;
+  }
+}
+/* Target the input field with ID "name" */
+#name {
+  /* Set width and padding for the input field */
+  width: 300px;
+  padding: 10px;
+
+  /* Add a border with rounded corners */
+  border: 2px solid #ccc;
+  border-radius: 5px;
+
+  /* Add a box shadow to give it a 3D effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  /* Add a subtle background color */
+  background-color: #f8f8f8;
+
+  /* Increase font size and add some space between text and border */
+  font-size: 16px;
+  line-height: 1.5;
+
+  /* Add some space at the top and bottom to improve visual appearance */
+  margin: 5px 0;
+
+  /* Add a smooth transition effect on focus */
+  transition: border-color 0.3s ease-in-out;
+
+  /* Add a placeholder color to style the input placeholder text */
+  ::placeholder {
+    color: #aaa;
+  }
+
+  /* Remove default browser styling on focus */
+  outline: none;
+}
+
+/* Style the input field on focus */
+#name:focus {
+  border-color: #007bff; /* Change border color on focus */
+}
+
+
+
+
+
+body{
+  background-image: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
+}
+
+label{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+p{
+  font-family: comic sans MS;
+}
+
+
+
+
+
+
+
+
+
+form{
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  height: 700px;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #ffffff;
+  
+}
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+h2{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
