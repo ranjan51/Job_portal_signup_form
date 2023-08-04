@@ -33,44 +33,25 @@ button:hover {
     min-width: 196px;
   }
 }
-/* Target the input field with ID "name" */
-#name {
-  /* Set width and padding for the input field */
-  width: 300px;
-  padding: 10px;
 
-  /* Add a border with rounded corners */
-  border: 2px solid #ccc;
-  border-radius: 5px;
 
-  /* Add a box shadow to give it a 3D effect */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-  /* Add a subtle background color */
-  background-color: #f8f8f8;
-
-  /* Increase font size and add some space between text and border */
-  font-size: 16px;
-  line-height: 1.5;
-
-  /* Add some space at the top and bottom to improve visual appearance */
-  margin: 5px 0;
-
-  /* Add a smooth transition effect on focus */
-  transition: border-color 0.3s ease-in-out;
-
-  /* Add a placeholder color to style the input placeholder text */
-  ::placeholder {
-    color: #aaa;
-  }
-
-  /* Remove default browser styling on focus */
-  outline: none;
-}
+/* #name{
+  border-radius: 10px;
+} */
 
 /* Style the input field on focus */
-#name:focus {
-  border-color: #007bff; /* Change border color on focus */
+input{
+  border-radius: 50px;
+  margin-right: 50px;
+  width: 700px;
+  outline: none;
+  border: 1px  solid black;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border-color: rgb(41, 99, 150);
+  
+  /* border-color: #FFFFFF; */
+ 
 }
 
 
@@ -78,15 +59,15 @@ button:hover {
 
 
 body{
-  background-image: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
+  background-image: linear-gradient( 135deg, #ffffff 10%, #ffffff 100%);
 }
 
 label{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-p{
+/* p{
   font-family: comic sans MS;
-}
+} */
 
 
 
@@ -97,24 +78,108 @@ p{
 
 
 form{
-
+  display: inline-block;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  height: 700px;
-  width: 1000px;
+
+  /* height: 1100px; */
+  width: 800px;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: #dedede;
+  /* background-color: #c6c5b7; */
+  padding-left: 500px;
+  /* margin-top: 5px; */
   
 }
-body{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+
+
+#h2{
+  font-family:'Times New Roman', Times, serif;
+  margin-top: 50px;
+}
+.myform{
+  padding: 5px;
+}
+button{
+  margin-top: 27px;
 }
 
 
-h2{
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+span{
+  cursor: pointer;
+}
+
+.left-div{
+  display: flex;
+  /* padding: 1rem; */
+}
+#left{
+  display: inline-block;
+  margin: 80px 10px;
+  margin-right: 200px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+  height: 500px;
+  width: 500px;
+  border-radius: 10px;
+  z-index: 1;
+ 
+  
+}
+#left-img{
+  margin-top: 20px;
+  margin-left: 70px;
+  
+}
+#correct{
+  height: 27px;
+}
+
+left h6{
+  margin-left: 70px;
+}
+.left-in{
+  /* position: fixed; */
+}
+/* input{
+  border-radius: 20px;
+} */
+
+.navbar{
+  background-color: #efefef;
+  
+  box-shadow:#00DDEB;
+ 
+
+
+}
+header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem;
+  align-items: center;
+  
+}
+header h6{
+  vertical-align: middle;
+  padding: 0.5rem;
+  
+}
+
+.imageContainer{
+  display: inline-block;
+  width: 300px;
+}
+.imageContainer img{
+  width: 100%;
+  mix-blend-mode: multiply;
+  vertical-align: middle;
+}
+
+
+
+.myform{
+  padding: 1rem;
 }
